@@ -29,15 +29,15 @@ import com.elasticsearch.application.output.LogFileWriter;
 @ContextConfiguration(classes = ElasticsearchConfigTest.TestConfig.class)
 class ElasticsearchConfigTest {
 	private final static Logger logger = LogFileWriter.getLogger();
-	private static String elasticsearchTestUsername = "elastic";
-	private static String elasticsearchTestPassword = "NuvzigPpl2LnOzqzRX1+";
-	private static String elasticsearchTestAPIKey = "T2piWDhva0JMZ1VxbnhKQ01KSVE6cGRKSFNoMlVUQk84N3Y1b3dIeFh1dw";
-	private static String elasticsearchTesterwarteterHostString = "212.227.170.147";
-	private static Integer elasticsearchTesterwarteterHostPort = 9200;
-	private static String elasticsearchTesterwarteterTruststorePfad = "C:/Users/Luise/Desktop/Projekt_02/Elasticsearch/elastic-Container/truststore/http.p12";
-	private static String elasticsearchTesterwartetesTruststorePasswort = "NvmLPARPTmexhysCO4lCFA";
-	private static String elasticsearchTesterwartetescertAlias = "http";
-	private static String elasticsearchTesterwartetecertCN = "557bc8a41056";
+	private static String elasticsearchTestUsername = "test";
+	private static String elasticsearchTestPassword = "password";
+	private static String elasticsearchTestAPIKey = "apikey";
+	private static String elasticsearchTesterwarteterHostString = "IP-Adress";
+	private static Integer elasticsearchTesterwarteterHostPort = Port;
+	private static String elasticsearchTesterwarteterTruststorePfad = "pfad/zum/trustore";
+	private static String elasticsearchTesterwartetesTruststorePasswort = "";
+	private static String elasticsearchTesterwartetescertAlias = "";
+	private static String elasticsearchTesterwartetecertCN = "";
 	
 	@Autowired
 	private ElasticsearchConfig elasticsearchConfig;
@@ -75,14 +75,14 @@ class ElasticsearchConfigTest {
 		MockitoAnnotations.openMocks(this);
 
 		// Setze die Werte für die Eigenschaften manuell
-		elasticsearchConfig.setHost("212.227.170.147");
-		elasticsearchConfig.setPort(9200);
+		elasticsearchConfig.setHost("IP");
+		elasticsearchConfig.setPort(Port);
 		elasticsearchConfig.setTruststorePath(
-				"C:/Users/Luise/Desktop/Projekt_02/Elasticsearch/elastic-Container/truststore/http.p12");
-		elasticsearchConfig.setTruststorePassword("NvmLPARPTmexhysCO4lCFA");
-		elasticsearchConfig.setCertCN("557bc8a41056");
-		elasticsearchConfig.setApiKey("T2piWDhva0JMZ1VxbnhKQ01KSVE6cGRKSFNoMlVUQk84N3Y1b3dIeFh1dw");
-		elasticsearchConfig.setCertAlias("http");
+				"/pfad/zum/Truststore");
+		elasticsearchConfig.setTruststorePassword("TruststorePassword");
+		elasticsearchConfig.setCertCN("CertCN");
+		elasticsearchConfig.setApiKey("ApiKey");
+		elasticsearchConfig.setCertAlias("http/https");
 	}
 
 	/**
