@@ -1,0 +1,16 @@
+/* Definiere die benutzerdefinierte CSS-Klasse für den roten Button */
+.red-button {
+    background-color: #e53935; /* Rot */
+    color: white; /* Weißer Text */
+    border: none; /* Keine Umrandung */
+}
+.pink-button {
+    background-color: rgb(255, 0, 255); /* Rot */
+    color: white; /* Weißer Text */
+    border: none; /* Keine Umrandung */
+}
+.gruener-button {
+	background-color: rgb(0, 128, 0); /* Rot */
+    color: white; /* Weißer Text */
+    border: none; /* Keine Umrandung */
+}

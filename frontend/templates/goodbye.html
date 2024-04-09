@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Goodbye</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 24px;
+        }
+        
+        p {
+            font-size: 18px;
+        }
+        
+        #countdown {
+            font-size: 48px;
+        }
+    </style>
+    <script>
+        var countdown = 10;
+
+        function startCountdown() {
+            if (countdown >= 0) {
+                document.getElementById('countdown').innerHTML = countdown;
+                countdown--;
+                setTimeout(startCountdown, 1000);
+            } else {
+                // Nach dem Countdown die Web-App beenden
+                window.location.href = "/goodbye";
+            }
+        }
+
+        // Countdown beim Laden der Seite starten
+        window.onload = startCountdown;
+    </script>
+</head>
+<body>
+    <h1>Auf Wiedersehen!</h1>
+    <p>Vielen Dank für die Nutzung unserer Web-App. Bis zum nächsten Mal!</p>
+    <p>Die Seite wird in <span id="countdown"></span> Sekunden automatisch geschlossen.</p>
+</body>
+</html>

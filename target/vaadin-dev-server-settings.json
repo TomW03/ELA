@@ -1,0 +1,17 @@
+{
+  "frontendFolder": "C:/Users/Luise/Desktop/Projekt_02/Abgabe/Java/meine-elastic-api-app/frontend",
+  "themeFolder": "themes",
+  "themeResourceFolder": "C:/Users/Luise/Desktop/Projekt_02/Abgabe/Java/meine-elastic-api-app/frontend/generated/jar-resources",
+  "staticOutput": "target/classes/META-INF/VAADIN/webapp/VAADIN/static",
+  "generatedFolder": "generated",
+  "statsOutput": "target/classes/META-INF/VAADIN/webapp/../config/",
+  "frontendBundleOutput": "target/classes/META-INF/VAADIN/webapp/",
+  "devBundleOutput": "C:/Users/Luise/Desktop/Projekt_02/Abgabe/Java/meine-elastic-api-app/src/main/dev-bundle/webapp",
+  "devBundleStatsOutput": "C:/Users/Luise/Desktop/Projekt_02/Abgabe/Java/meine-elastic-api-app/src/main/dev-bundle/config",
+  "jarResourcesFolder": "C:/Users/Luise/Desktop/Projekt_02/Abgabe/Java/meine-elastic-api-app/frontend/generated/jar-resources",
+  "themeName": "",
+  "clientServiceWorkerSource": "C:\\Users\\Luise\\Desktop\\Projekt_02\\Abgabe\\Java\\meine-elastic-api-app\\target\\sw.ts",
+  "pwaEnabled": false,
+  "offlineEnabled": false,
+  "offlinePath": "'offline.html'"
+}
